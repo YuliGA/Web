@@ -52,7 +52,7 @@ html {
 
 .div1 {
   background-color: #0B14AE;
-  height: 50px;
+  height: 30px;
 	padding: 10px;
 	margin: 20px;
 }
@@ -61,7 +61,12 @@ html {
   background-color: #0B14AE;
   height: 250px;
 	padding: 10px;
-	margin: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.contenedor1 {
+	overflow: hidden;
 }
 
 .contenedor {
