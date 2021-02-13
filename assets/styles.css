@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'Truculenta', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -47,22 +48,31 @@ table {
 	border-spacing: 0;
 }
 html {
-	background-color: #2FBAB8;
+	background-color: #749f9e;
 }
 
 .div1 {
-  background-color: #0B14AE;
   height: 30px;
 	padding: 10px;
 	margin: 20px;
 }
 
 .div2 {
-  background-color: #0B14AE;
   height: 250px;
 	padding: 10px;
 	margin-left: 20px;
 	margin-right: 20px;
+}
+
+li{
+	display: inline;
+	margin: 5px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.div1, .div2, .div3, .div4 {
+	background-color: #caddd9;
 }
 
 .contenedor1 {
@@ -75,7 +85,6 @@ html {
 }
 
 .div3 {
-	background-color: #0B14AE;
 	float: left;
 	width: 49%;
 	height: 250px;
@@ -83,7 +92,6 @@ html {
 }
 
 .div4 {
-	background-color: #0B14AE;
 	float: left;
 	width: 49%;
 	height: 250px;
