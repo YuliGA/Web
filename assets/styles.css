@@ -30,11 +30,23 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	position: relative;
-	background-color: #749f9e;
 	line-height: 1.5;
-	font-family: 'Truculenta', sans-serif;
 	font-size: 16px;
+	font-family: "OpenSans-Regular", sans-serif;
+}
+
+@font-face {
+	font-family: "OpenSans-Regular";
+	src: url(../assets/css/fonts/OpenSans-Regular.ttf)
+			format("truetype");
+	font-weight: bold;
+	font-style: normal;
+
+	font-family: "OpenSans-Bold";
+	src: url(../assets/css/fonts/OpenSans-Bold.ttf)
+			format("truetype");
+	font-weight: bold;
+	font-style: normal;
 }
 
 ol, ul {
@@ -66,26 +78,49 @@ li{
 
 h1{
 	font-size: 20px;
+	font-family: "OpenSans-Bold", sans-serif;
 }
 
 p{
 	font-size: 16px;
-	font-family: sans-serif;
-	margin-bottom: 15px;
+	color: white;
+	text-align: center;
+	width: 500px;
 }
 
-.div1, .div4, .div5, .div6 {
-	width: 100%;
-	height: 200px;
+.div1 {
+	width: 96%;
+	height: 663px;
+	background-image: url(../assets/images/Fondo1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 2%;
+}
+
+.titulo {
+	font-size: 44px;
+	font-family: "OpenSans-Bold";
+	color: white;
+	width: 30%;
+}
+
+.linea {
+	width: 100px;
+	border-bottom: 2px solid white;
+}
+
+.div4, .div5, .div6 {
+	width: 96%;
+	height: 100%;
 	background-color: pink;
-	padding: 30px;
+	padding: 2%;
 }
 
 .navegacion a{
 	display: block;
 	text-decoration: none;
-	color: #2D211F;
-	border-bottom: 1px solid #2D211F;
+	color: white;
+	font-size: 16px;
 }
 
 .lanzador-menu{
@@ -94,7 +129,6 @@ p{
 	padding: 6px 10px;
 	background-color: #2D211F;
 	border-radius: 3px;
-	font-family: 'Truculenta', sans-serif;
 	font-size: 24px;
 	font-weight: bold;
 }
@@ -104,7 +138,7 @@ p{
 		background-color: #caddd9;
 		padding: 10px;
 		margin: 10px;
-		width: 92%;
+		width: 90%;
 		height: 100%;
 		float: none;
 	}
@@ -139,18 +173,17 @@ p{
 
 	.navegacion{
 		position: absolute;
-		top:-30px;
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-
-	body{
-		margin-top: 60px;
+		width: 95%;
 	}
 
 	.navegacion li{
 		display: inline-block;
 		margin-right: 15px;
+	}
+
+	.navegacion ul{
+		float: right;
+		padding-top: 20px;
 	}
 
 }
