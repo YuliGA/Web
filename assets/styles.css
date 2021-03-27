@@ -33,6 +33,7 @@ body {
 	line-height: 1.5;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
+	background-color: #241d1b;
 }
 
 ol, ul {
@@ -62,10 +63,12 @@ li{
 	font-weight: bold;
 }
 
+/*---------------------------- Párrafos -----------------------------------*/
+
 p{
 	font-size: 16px;
 	text-align: left;
-	width: 400px;
+	width: 100%;
 }
 
 .pcentral {
@@ -78,8 +81,8 @@ p{
 .cortosb, .cortosr{
 	font-size: 16px;
 	text-align: center;
-	margin-left: 135px;
-	width: 500px;
+	margin-left: 120px;
+	width: 420px;
 }
 
 .cortosb{
@@ -90,14 +93,15 @@ color: white;
 color: #d03b40;
 }
 
+/*--------------------- Encabezados ------------------------*/
+
 .encabezado1 {
-	width: 500px;
+	width: 40%;
 	font-size: 44px;
 	font-weight: bold;
 	color: white;
 	text-align: center;
 	z-index: 99;
-  background-size: cover;
 	padding-top: 150px;
 	margin-bottom: 10px;
 	margin-left: 30%;
@@ -124,14 +128,12 @@ color: #d03b40;
 }
 
 .encabezado4 {
+	width: 100%;
 	font-size: 24px;
 	font-weight: bold;
 	color: black;
 	text-align: left;
-	z-index: 99;
-  background-size: cover;
-	padding-top: 30px;
-	margin-bottom: 10px;
+	padding-top: 50px;
 }
 
 .linea {
@@ -141,39 +143,24 @@ color: #d03b40;
 	border-bottom: 2px solid white;
 }
 
-.navegacion a{
-	display: block;
-	text-decoration: none;
-	color: white;
-	font-size: 16px;
-}
-
-.lanzador-menu{
-	text-decoration: none;
-	color: #FFF;
-	padding: 6px 10px;
-	background-color: #2D211F;
-	border-radius: 3px;
-	font-size: 24px;
-	font-weight: bold;
-}
+/*--------------------- Secciones - Div ------------------------*/
 
 .div1 {
-	height: 663px;
+	min-height: 663px;
 	background-image: url(../assets/images/Fondo1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 2%;
 }
 
-.div2 {
+.div2, .div10 {
 	width: 50%;
 	height: 400px;
 	background-color: #d03b40;
 	float: left;
 }
 
-.div3 {
+.div3, .div9 {
 	width: 50%;
 	height: 400px;
 	background-color: #ded6c0;
@@ -188,6 +175,23 @@ color: #d03b40;
 	float: left;
 }
 
+.div5, .div6, .div7, .div8{
+	width: 50%;
+	height: 320px;
+	background-color: #f5f0ed;
+	float: left;
+}
+
+.div11 {
+	color: white;
+	height: 100px;
+	float: left;
+	padding-left: 20px;
+	padding-top: 50px;
+}
+
+/*--------------------- Varios ------------------------*/
+
 .boton {
 	color: white;
 	font-size: 14px;
@@ -197,34 +201,45 @@ color: #d03b40;
 	margin-top: 50px;
 	margin-left: 37%;
 	margin-bottom: 200px;
+	text-align: center;
 }
 
 .imageprod {
 	float: left;
-	margin: 40px;
+	margin: 30px;
 	padding-top: 20px;
 }
 
 .contenido {
 	float: left;
-	width: 80px;
+	width: 55%;
 }
 
-.div5, .div6, .div7, .div8{
-	width: 50%;
-	height: 310px;
-	background-color: #f5f0ed;
-	float: left;
+/*--------------------- Navegación ------------------------*/
+
+.navegacion a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
 }
 
-@media screen and (max-width: 600px){
-	.div1, .div2, .div3, .div4  {
-		background-color: #caddd9;
-		padding: 10px;
-		margin: 10px;
-		width: 90%;
-		height: 100%;
-		float: none;
+.lanzador-menu{
+	text-decoration: none;
+	color: #FFF;
+	padding: 6px 10px;
+	background-color: #d03b40;
+	border-radius: 3px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*--------------------- Media Querys ------------------------*/
+
+@media screen and (max-width: 729px){
+
+	.encabezado1 {
+		font-size: 30px;
 	}
 
 	.js .navegacion{
@@ -235,7 +250,7 @@ color: #d03b40;
 		top:43px;
 		left: 30px;
 		right: 30px;
-		background-color: #2D211F;
+		background-color: #d03b40;
 	}
 
 	.js .navegacion a{
@@ -249,7 +264,7 @@ color: #d03b40;
 	}
 }
 
-@media screen and (min-width: 601px){
+@media screen and (min-width: 730px){
 
 	.lanzador-menu{
 		display: none;
