@@ -32,21 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1.5;
 	font-size: 16px;
-	font-family: "OpenSans-Regular", sans-serif;
-}
-
-@font-face {
-	font-family: "OpenSans-Regular";
-	src: url(../assets/css/fonts/OpenSans-Regular.ttf)
-			format("truetype");
-	font-weight: bold;
-	font-style: normal;
-
-	font-family: "OpenSans-Bold";
-	src: url(../assets/css/fonts/OpenSans-Bold.ttf)
-			format("truetype");
-	font-weight: bold;
-	font-style: normal;
+	font-family: 'Open Sans', sans-serif;
 }
 
 ol, ul {
@@ -78,20 +64,22 @@ li{
 
 p{
 	font-size: 16px;
-	color: white;
-	text-align: center;
-	width: 500px;
+	text-align: left;
+	width: 400px;
 }
 
 .pcentral {
+	color: white;
 	margin-left: 30%;
+	text-align: center;
+	width: 500px;
 }
 
 .cortosb, .cortosr{
 	font-size: 16px;
 	text-align: center;
-	width: 400px;
 	margin-left: 135px;
+	width: 500px;
 }
 
 .cortosb{
@@ -103,11 +91,11 @@ color: #d03b40;
 }
 
 .encabezado1 {
+	width: 500px;
 	font-size: 44px;
-	font-family: "OpenSans-Bold";
+	font-weight: bold;
 	color: white;
 	text-align: center;
-	min-width: 300px;
 	z-index: 99;
   background-size: cover;
 	padding-top: 150px;
@@ -117,7 +105,7 @@ color: #d03b40;
 
 .encabezado2, .encabezado3 {
 	font-size: 28px;
-	font-family: "OpenSans-Bold";
+	font-weight: bold;
 	text-align: center;
 	width:300px;
 	min-width: 300px;
@@ -135,18 +123,22 @@ color: #d03b40;
 	color: #d03b40;
 }
 
+.encabezado4 {
+	font-size: 24px;
+	font-weight: bold;
+	color: black;
+	text-align: left;
+	z-index: 99;
+  background-size: cover;
+	padding-top: 30px;
+	margin-bottom: 10px;
+}
+
 .linea {
 	width: 100px;
 	margin-left: 600px;
 	margin-bottom: 30px;
 	border-bottom: 2px solid white;
-}
-
-.div5, .div6 {
-	width: 96%;
-	height: 100%;
-	background-color: pink;
-	padding: 2%;
 }
 
 .navegacion a{
@@ -197,6 +189,7 @@ color: #d03b40;
 }
 
 .boton {
+	color: white;
 	font-size: 14px;
 	border: 2px solid white;
 	padding: 10px;
@@ -204,6 +197,24 @@ color: #d03b40;
 	margin-top: 50px;
 	margin-left: 37%;
 	margin-bottom: 200px;
+}
+
+.imageprod {
+	float: left;
+	margin: 40px;
+	padding-top: 20px;
+}
+
+.contenido {
+	float: left;
+	width: 80px;
+}
+
+.div5, .div6, .div7, .div8{
+	width: 50%;
+	height: 310px;
+	background-color: #f5f0ed;
+	float: left;
 }
 
 @media screen and (max-width: 600px){
