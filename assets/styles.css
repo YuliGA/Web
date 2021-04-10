@@ -146,11 +146,12 @@ color: #d03b40;
 /*--------------------- Secciones - Div ------------------------*/
 
 .div1 {
-	min-height: 663px;
+	min-height: 640px;
 	background-image: url(../assets/images/Fondo1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 2%;
+	float: none;
 }
 
 .div2, .div10 {
@@ -232,24 +233,31 @@ color: #d03b40;
 	border-radius: 3px;
 	font-size: 20px;
 	font-weight: bold;
+  position: absolute;
+  top: 8px;
+  right: 5%;
 }
 
 /*--------------------- Media Querys ------------------------*/
 
-@media screen and (max-width: 729px){
+@media screen and (max-width: 360px){
 
-	.encabezado1 {
-		font-size: 30px;
+	.div1 {
+		float: left;
+		background-image: url(../assets/images/Fondo1.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 
 	.js .navegacion{
 		max-height: 0;
+		width: 170px;
 		overflow: hidden;
 		transition: max-height .5s;
-		position: absolute;
-		top:43px;
-		left: 30px;
-		right: 30px;
+	  position: absolute;
+	  top: 45px;
+		left: 50%;
+	  right: 10%;
 		background-color: #d03b40;
 	}
 
@@ -264,7 +272,7 @@ color: #d03b40;
 	}
 }
 
-@media screen and (min-width: 730px){
+@media screen and (min-width: 361px){
 
 	.lanzador-menu{
 		display: none;
