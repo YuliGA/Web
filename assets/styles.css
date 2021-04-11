@@ -4,7 +4,7 @@
 */
 
 html, body, div, span, applet, object, iframe,
-h2, h3, h4, h5, h6, blockquote, pre,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -19,7 +19,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -65,17 +64,24 @@ li{
 
 /*---------------------------- Párrafos -----------------------------------*/
 
+.container {
+  position: relative;
+	width: 100%
+}
+
+.center {
+	color: white;
+  position: absolute;
+  text-align: center;
+  font-size: 16px;
+	padding-left: 31%;
+	padding-right: 31%;
+}
+
 p{
 	font-size: 16px;
 	text-align: left;
 	width: 100%;
-}
-
-.pcentral {
-	color: white;
-	margin-left: 30%;
-	text-align: center;
-	width: 500px;
 }
 
 .cortosb, .cortosr{
@@ -96,15 +102,14 @@ color: #d03b40;
 /*--------------------- Encabezados ------------------------*/
 
 .encabezado1 {
-	width: 40%;
+	padding-left: 30%;
+	padding-right: 30%;
 	font-size: 44px;
 	font-weight: bold;
 	color: white;
 	text-align: center;
-	z-index: 99;
-	padding-top: 150px;
+	padding-top: 15%;
 	margin-bottom: 10px;
-	margin-left: 30%;
 }
 
 .encabezado2, .encabezado3 {
@@ -138,8 +143,7 @@ color: #d03b40;
 
 .linea {
 	width: 100px;
-	margin-left: 600px;
-	margin-bottom: 30px;
+	margin-left: 45%;
 	border-bottom: 2px solid white;
 }
 
@@ -147,11 +151,13 @@ color: #d03b40;
 
 .div1 {
 	min-height: 640px;
+	width: 100%;
 	background-image: url(../assets/images/Fondo1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 2%;
 	float: none;
+	padding-left: 2%;
+	padding-top: 2%;
 }
 
 .div2, .div10 {
@@ -184,6 +190,7 @@ color: #d03b40;
 }
 
 .div11 {
+	width: 100%;
 	color: white;
 	height: 100px;
 	float: left;
@@ -242,11 +249,29 @@ color: #d03b40;
 
 @media screen and (max-width: 360px){
 
-	.div1 {
+	.div1, .div2, .div3, .div4, .div5, .div6,
+	.div7, .div8, .div9, .div10, .div11{
 		float: left;
-		background-image: url(../assets/images/Fondo1.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
+	}
+
+	.center {
+		color: white;
+	  position: absolute;
+	  text-align: center;
+	  font-size: 20px;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.encabezado1 {
+		padding-left: 5%;
+		padding-right: 5%;
+		font-size: 38px;
+		font-weight: bold;
+		color: white;
+		text-align: center;
+		padding-top: 25%;
+		margin-bottom: 5px;
 	}
 
 	.js .navegacion{
